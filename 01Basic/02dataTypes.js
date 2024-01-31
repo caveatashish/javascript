@@ -9,5 +9,6 @@ let state = null
 
 console.table([firstName, lastName, age, isLoggedIn, state])
 
-console.log("Null type" , typeof null)
-console.log("Undefined Type", typeof undefined)
+console.log("Null type" , typeof null)  //Null type :  object
+console.log("Undefined Type", typeof undefined) //Undefined Type undefined
+
