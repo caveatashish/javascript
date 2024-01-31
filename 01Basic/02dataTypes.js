@@ -8,3 +8,6 @@ let state = null
 // undefined something which is not defined
 
 console.table([firstName, lastName, age, isLoggedIn, state])
+
+console.log("Null type" , typeof null)
+console.log("Undefined Type", typeof undefined)
