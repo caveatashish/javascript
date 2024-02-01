@@ -15,3 +15,9 @@ JsUser.greeeting = function()
 }
 console.log(JsUser.greeeting) //[Function (anonymous)]
 console.log(JsUser.greeeting())  //Hello Js User
+
+JsUser.greeetingUser = function()
+{
+    console.log (`Hello Js User : ${JsUser.firstName}`)
+}
+console.log(JsUser.greeetingUser())  //Hello Js User
