@@ -35,3 +35,14 @@ console.log(newRating);
 const addTwo = (num1, num2)=> num1+ num2
 console.log(addTwo);
 
+
+console.log("Adding condition to foreach loop")
+const newNum=[]
+
+ratings.forEach((num)=>{
+    if(num > 4) {
+        newNum.push(num)
+    }
+})
+console.log(newNum)
+
