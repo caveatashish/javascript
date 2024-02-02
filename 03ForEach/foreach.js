@@ -22,4 +22,16 @@ coding.forEach((item, index, arr)=>{
     console.log(item, index, arr)
 })
 
+const ratings = [1,2,3,4,5,6,7,8,9];
+
+const myRating = ratings.filter((num)=> num > 4)
+console.log(myRating);
+
+const newRating = ratings.filter((num)=>{
+    return num>4   // we have to explict use return if we are not using  return in one line or if we are using scope
+})
+console.log(newRating);
+
+const addTwo = (num1, num2)=> num1+ num2
+console.log(addTwo);
 
