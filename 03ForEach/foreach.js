@@ -22,7 +22,7 @@ coding.forEach((item, index, arr)=>{
     console.log(item, index, arr)
 })
 
-const ratings = [1,2,3,4,5,6,7,8,9];
+const ratings = [1,2,3,4,5,6,7,8,9,10];
 
 const myRating = ratings.filter((num)=> num > 4)
 console.log(myRating);
@@ -45,4 +45,9 @@ ratings.forEach((num)=>{
     }
 })
 console.log(newNum)
+
+const chaining = ratings.map((num)=>num * 10)
+                        .map((num)=>num +1)
+                        .filter((num)=>{ return num > 40 })
+console.log(chaining)                        
 
