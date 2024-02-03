@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Document with DOM Learning is Title</title>
+    <style>
+        .bg-black {
+            background-color: black;
+            color: whitesmoke;
+
+        }
+    </style>
+</head>
+
+<body class="bg-black">
+    <div>
+        <h1 id="title" sss="waste and test" class="heading">Dom Learning and Basic with Ashish Sh with attribut sss</h1>
+        <p>
+            This is paragraph
+        </p>
+
+        <h1 id="title" class="heading" style="color: olivedrab;" >
+            Dom Learning and Basic with Ashish this is second title
+        </h1>
+
+    </div>
+
+    <div class="parent">
+        <div class="day">Monday</div> 
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+
+<script>
+    const parent = document.querySelector('.parent')
+    console.log(parent)
+    console.log(parent.children);
+    console.log(parent.children[1].innerHTML);
+
+    console.log("For Loop")
+    for (let index = 0; index < parent.children.length; index++) {
+        const element = parent.children[index].innerHTML;
+        console.log(element)
+    }
+    
+    parent.children[1].style.color ="red"
+
+    console.log(parent.firstElementChild);
+    console.log(parent.lastElementChild);
+
+    const dayParent = document.querySelector('.day').parentElement 
+    const node = document.querySelector('.parent');
+    console.log("Child Node: ", node.childNodes)
+
+
+</script>
+
+
+</html>
