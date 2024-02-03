@@ -35,8 +35,8 @@
     function editLastLanguage()
     {
         console.log("Edit Function");
-        const lastLanguage = document.querySelector("li:nth-child(2)")
-      // const lastLanguage = document.querySelector("ul:last-Child")
+      //  const lastLanguage = document.querySelector("li:nth-child(2)")
+       const lastLanguage = document.querySelector("li:last-Child")
        console.log(lastLanguage)
 
         const li = document.createElement("li")
@@ -44,14 +44,13 @@
         lastLanguage.replaceWith(li)
     }
 
-    function editLastLanguage()
+    function removeLastLanguage()
     {
-        const lastLanguage = document.querySelector("li")
-      // const lastLanguage = document.querySelector("li:lastChild")
+      //  const lastLanguage = document.querySelector("li")
+       const lastLanguage = document.querySelector("li:last-child")
 
-        const li = document.createElement("li")
-        li.textContent = "New Replaced Language"
-        lastLanguage.replaceWith(li)
+       lastLanguage.remove()
+        
     }
 
 
