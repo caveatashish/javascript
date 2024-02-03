@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>DoM</title>
+</head>
+<body>
+    <button type="button" onClick = addOptimiseLanguage("pccc") >Add Language</button>
+    <button type="button" onclick="editLastLanguage()">Edit Language</button>
+    <button type="button" onclick="removeLastLanguage()">Remove Last Language</button>
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+
+<script>
+    function addLanguage(langName){
+        const li = document.createElement('li')
+        li.innerHTML= langName
+
+        const ul = document.querySelector(".language")    
+        ul.appendChild(li)
+    }
+
+    function addOptimiseLanguage(langName)
+    {
+        const li = document.createElement("li")
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector(".language").appendChild(li)
+
+    }
+
+    //edit
+    function editLastLanguage()
+    {
+        console.log("Edit Function");
+        const lastLanguage = document.querySelector("li:nth-child(2)")
+      // const lastLanguage = document.querySelector("ul:last-Child")
+       console.log(lastLanguage)
+
+        const li = document.createElement("li")
+        li.textContent = "New Replaced Language"
+        lastLanguage.replaceWith(li)
+    }
+
+    function editLastLanguage()
+    {
+        const lastLanguage = document.querySelector("li")
+      // const lastLanguage = document.querySelector("li:lastChild")
+
+        const li = document.createElement("li")
+        li.textContent = "New Replaced Language"
+        lastLanguage.replaceWith(li)
+    }
+
+
+
+
+</script>
+
+</html>
